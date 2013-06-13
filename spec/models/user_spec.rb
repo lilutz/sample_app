@@ -75,7 +75,7 @@ describe User do
   end
 
   describe "when password is not present" do
-    before { @user.password = @user.password_confirmation = " " }
+    before { @user.password = @user.password_confirmation = "" }
     it { should_not be_valid }
   end
 
